@@ -1,13 +1,9 @@
-# YOLO3-4-Py
-[![PyPI Badge](https://img.shields.io/badge/PyPI-0.1.0rc12-blue.svg)](https://pypi.org/project/yolo34py)
-[![PyPI Badge](https://img.shields.io/badge/PyPI-0.1.0rc12--gpu-blue.svg)](https://pypi.org/project/yolo34py-gpu)
-[![Build Status](https://travis-ci.org/madhawav/YOLO3-4-Py.svg?branch=master)](https://travis-ci.org/madhawav/YOLO3-4-Py)
 
-A Python wrapper on [Darknet](https://github.com/pjreddie/darknet). Compatible with latest [YOLO V3](https://pjreddie.com/darknet/yolo).
-YOLO 3.0 is a real-time Object Detector by [pjreddie](https://pjreddie.com/).
 
-![OutputImage](doc/output.jpg)
-Image source: http://absfreepic.com/free-photos/download/crowded-cars-on-street-4032x2272_48736.html
+##Application for the recogntition of Mexican Plates and comparison to see if the car and plate matches with the stolen car registry. 
+
+Demo of Plate Recognition 
+Video source: https://firebasestorage.googleapis.com/v0/b/techlink-349b1.appspot.com/o/demo.MOV?alt=media&token=326fb2fb-9e95-42c7-addf-90c284b9f3d9
 
 ## Pre-requisites
 1) Python 3.5
@@ -35,37 +31,3 @@ pip3 install yolo34py
 pip3 install yolo34py-gpu
 ```
 
-```
-NOTE: PyPI Deployments does not use OpenCV due to complexity involved in installation. 
-To get best performance, it is recommended to install from source with OpenCV enabled.
-```
-
-## How to demos in local machine?
-1) If you have not installed already, run `python3 setup.py build_ext --inplace` to install library locally.
-2) Download "yolov3" model file and config files using `sh download_models.sh`.
-3) Run `python3 webcam_demo.py`, `python3 video_demo.py` or `python3 image_demo.py`
-
-## How to run demo using docker?
-1) Navigate to [docker](/docker) directory.
-2) Copy sample images into the `input` directory. Or else run [input/download_sample_images.sh](docker/input/download_sample_images.sh)
-3) Run `sh run.sh`
-4) Observe the outputs generated in `output` directory.
-
-## Installation from Source
-1) Set environment variables
- - To enable GPU acceleration, `export GPU=1`.
- - To enable OpenCV, `export OPENCV=1`
- 
-2) Navigate to source root and run `pip3 install .` to install library.
-
-### Using a custom version of Darknet
-1) Set environment variable DARKNET_HOME to download location of darknet.
-2) Add DARKNET_HOME to LD_LIBRARY_PATH. `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DARKNET_HOME`
-3) Continue instructions for _installation from source_.
-
-## Having trouble? 
-Kindly raise your issues in the issues section of GitHub repository.
-
-## Like to contribute?
-Feel free to send PRs or discuss on possible future improvements in issues section. 
-Your contributions are most welcome!
