@@ -1,6 +1,5 @@
 
-
-##Application for the recogntition of Mexican Plates and comparison to see if the car and plate matches with the stolen car registry. 
+#Application for the recogntition of Mexican Plates and comparison to see if the car and plate matches with the stolen car registry. 
 
 Demo of Plate Recognition 
 Video source: https://firebasestorage.googleapis.com/v0/b/techlink-349b1.appspot.com/o/demo.MOV?alt=media&token=326fb2fb-9e95-42c7-addf-90c284b9f3d9
